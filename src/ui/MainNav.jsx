@@ -52,6 +52,7 @@ const StyledNavLink = styled(NavLink)`
     color: var(--color-brand-600);
   }
 `;
+
 function MainNav() {
   return (
     <nav>
