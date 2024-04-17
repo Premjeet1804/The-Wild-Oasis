@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { BsQrCodeScan } from "react-icons/bs";
 import {
   HiOutlineCalendarDays,
   HiOutlineCog6Tooth,
@@ -70,9 +71,15 @@ function MainNav() {
           </StyledNavLink>
         </li>
         <li>
+          <StyledNavLink to="/qrcode">
+            <BsQrCodeScan />
+            <span> QR-Code</span>
+          </StyledNavLink>
+        </li>
+        <li>
           <StyledNavLink to="/cabins">
             <HiOutlineHomeModern />
-            <span>Cabins</span>
+            <span>Places</span>
           </StyledNavLink>
         </li>
         <li>

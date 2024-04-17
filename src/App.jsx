@@ -16,6 +16,7 @@ import AppLayout from "./ui/AppLayout";
 import Booking from "./pages/Booking";
 import Checkin from "./pages/Checkin";
 import ProtectedRoute from "./ui/ProtectedRoute";
+import QRCodeGenerator from "./features/qrcode/QRCodeGenerator";
 import { DarkModeProvider } from "./context/DarkModeContext";
 
 const queryClient = new QueryClient({
@@ -47,6 +48,7 @@ function App() {
               <Route path="dashboard" element={<Dashboard />} />
               <Route path="bookings" element={<Bookings />} />
               <Route path="bookings/:bookingId" element={<Booking />} />
+              <Route path="qrcode" element={<QRCodeGenerator/>}/>
               <Route path="checkin/:bookingId" element={<Checkin />} />
               <Route path="cabins" element={<Cabins />} />
               <Route path="users" element={<Users />} />
