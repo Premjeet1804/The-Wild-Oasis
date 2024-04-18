@@ -10,6 +10,16 @@ const Img = styled.img`
   width: auto;
 `;
 
+const Brand = styled.h2`
+color: #2afcdc; 
+background-image: -webkit-linear-gradient(45deg, #2afcdc 29%, #5f8dbc 87%); 
+background-clip: text; 
+-webkit-background-clip: text; 
+text-fill-color: transparent; 
+-webkit-text-fill-color: transparent;
+
+`;
+
 function Logo() {
   const { isDarkMode } = useDarkMode();
 
@@ -17,7 +27,8 @@ function Logo() {
 
   return (
     <StyledLogo>
-      <Img src={src} alt="Logo" />
+      <Brand>QuickTrip</Brand>
+      {/* <Img src={src} alt="Logo" /> */}
     </StyledLogo>
   );
 }

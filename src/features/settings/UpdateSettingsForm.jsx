@@ -28,7 +28,7 @@ function UpdateSettingsForm() {
 
   return (
     <Form>
-      <FormRow label="Minimum nights/booking">
+      <FormRow label="Minimum booking">
         <Input
           type="number"
           id="min-nights"
@@ -38,7 +38,7 @@ function UpdateSettingsForm() {
         />
       </FormRow>
 
-      <FormRow label="Maximum nights/booking">
+      <FormRow label="Maximum booking">
         <Input
           type="number"
           id="max-nights"
@@ -48,7 +48,7 @@ function UpdateSettingsForm() {
         />
       </FormRow>
 
-      <FormRow label="Maximum guests/booking">
+      <FormRow label="Maximum guests">
         <Input
           type="number"
           id="max-guests"
@@ -58,7 +58,7 @@ function UpdateSettingsForm() {
         />
       </FormRow>
 
-      <FormRow label="Breakfast price">
+      <FormRow label="Median price">
         <Input
           type="number"
           id="breakfast-price"
